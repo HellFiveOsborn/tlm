@@ -1,4 +1,4 @@
-FROM codellama:7b
+FROM dolphincoder:7b
 
 PARAMETER temperature 0.25
 PARAMETER top_p 0.2

@@ -1,4 +1,4 @@
-# tlm - Local CLI Copilot, powered by CodeLLaMa. 💻🦙
+# tlm - Local CLI Copilot, powered by ~~CodeLLaMa~~ (**DolphinCoder**). 💻🐬
 
 > [!TIP]
 > Starcoder2 3B model option coming soon to support workstations with limited resources.
@@ -11,7 +11,7 @@
 
 
 
-tlm is your CLI companion which requires nothing except your workstation. It uses most efficient and powerful [CodeLLaMa](https://ai.meta.com/blog/code-llama-large-language-model-coding/) in your local environment to provide you the best possible command line suggestions.
+tlm is your CLI companion which requires nothing except your workstation. It uses most efficient and powerful [~~CodeLLaMa~~](https://ai.meta.com/blog/code-llama-large-language-model-coding/) -> **DolphinCoder** in your local environment to provide you the best possible command line suggestions.
 
 ![Suggest](./assets/suggest.gif)
 
@@ -74,7 +74,7 @@ It will recognize the which platform and architecture to download and will execu
 Download and execute the installation script by using the following command;
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/yusufcanb/tlm/1.1/install.sh | sudo bash -E
+curl -fsSL https://raw.githubusercontent.com/hellfiveosborn/tlm/1.1/install.sh | sudo bash -E
 ```
 
 #### Windows (Powershell 5.1 or higher)
@@ -82,7 +82,7 @@ curl -fsSL https://raw.githubusercontent.com/yusufcanb/tlm/1.1/install.sh | sudo
 Download and execute the installation script by using the following command;
 
 ```powershell
-Invoke-RestMethod -Uri https://raw.githubusercontent.com/yusufcanb/tlm/1.1/install.ps1 | Invoke-Expression
+Invoke-RestMethod -Uri https://raw.githubusercontent.com/hellfiveosborn/tlm/1.1/install.ps1 | Invoke-Expression
 ```
 
 ### Go Install
@@ -90,7 +90,7 @@ Invoke-RestMethod -Uri https://raw.githubusercontent.com/yusufcanb/tlm/1.1/insta
 If you have Go 1.21 or higher installed on your system, you can easily use the following command to install tlm;
 
 ```bash
-go install github.com/yusufcanb/tlm@latest
+go install github.com/hellfiveosborn/tlm@latest
 ```
 
 Then, deploy tlm modelfiles.

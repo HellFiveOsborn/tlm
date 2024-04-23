@@ -31,7 +31,7 @@ func New(version, buildSha string) *TlmApp {
 
 	cliApp := &cli.App{
 		Name:            "tlm",
-		Usage:           "terminal copilot, powered by CodeLLaMa.",
+		Usage:           "terminal copilot, powered by DolphinCoder.",
 		UsageText:       "tlm explain '<command>'\ntlm suggest '<prompt>'",
 		Version:         version,
 		CommandNotFound: notFound,
