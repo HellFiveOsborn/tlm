@@ -66,7 +66,7 @@ if (-not (Test-Path $install_directory)) {
 }
 
 # Download the binary
-Write-Host "Downloading tlm version ${version} for ${os}/${arch}..."
+Write-Host "Downloading tlm version ${version} for ${os}/${arch}, please wait..."
 try {
     Invoke-WebRequest -Uri $download_url -OutFile "$install_directory\tlm.exe" -UseBasicParsing -ErrorAction Stop | Out-Null
 } catch {

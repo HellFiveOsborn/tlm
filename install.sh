@@ -113,7 +113,7 @@ if ! curl -fsSL $ollama_host &>/dev/null; then
 fi
 
 # Download the binary
-status "Downloading tlm version ${version} for ${os}/${arch}..."
+status "Downloading tlm version ${version} for ${os}/${arch}, please wait..."
 if ! curl -fsSL -o tlm ${download_url}; then
     error "Download failed. Please check your internet connection and try again."
     exit 1
