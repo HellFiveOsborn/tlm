@@ -90,7 +90,7 @@ Invoke-RestMethod -Uri https://raw.githubusercontent.com/hellfiveosborn/tlm/main
 If you have Go 1.21 or higher installed on your system, you can easily use the following command to install tlm;
 
 ```bash
-go install github.com/hellfiveosborn/tlm@latest
+go install github.com/HellFiveOsborn/tlm@latest
 ```
 
 Then, deploy tlm modelfiles.
