@@ -1,7 +1,7 @@
 package config_test
 
 import (
-	"github.com/yusufcanb/tlm/config"
+	"github.com/HellFiveOsborn/tlm/config"
 	"testing"
 )
 

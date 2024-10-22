@@ -2,8 +2,8 @@ package explain_test
 
 import (
 	ollama "github.com/jmorganca/ollama/api"
-	"github.com/yusufcanb/tlm/config"
-	"github.com/yusufcanb/tlm/explain"
+	"github.com/HellFiveOsborn/tlm/config"
+	"github.com/HellFiveOsborn/tlm/explain"
 	"testing"
 )
 

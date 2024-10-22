@@ -2,7 +2,7 @@ package app_test
 
 import (
 	"fmt"
-	"github.com/yusufcanb/tlm/app"
+	"github.com/HellFiveOsborn/tlm/app"
 	"io"
 	"os"
 	"testing"

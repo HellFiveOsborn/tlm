@@ -3,8 +3,8 @@ package app
 import (
 	"fmt"
 	"github.com/urfave/cli/v2"
-	"github.com/yusufcanb/tlm/install"
-	"github.com/yusufcanb/tlm/shell"
+	"github.com/HellFiveOsborn/tlm/install"
+	"github.com/HellFiveOsborn/tlm/shell"
 	"os"
 )
 

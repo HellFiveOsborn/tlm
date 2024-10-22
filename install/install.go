@@ -2,8 +2,8 @@ package install
 
 import (
 	ollama "github.com/jmorganca/ollama/api"
-	"github.com/yusufcanb/tlm/explain"
-	"github.com/yusufcanb/tlm/suggest"
+	"github.com/HellFiveOsborn/tlm/explain"
+	"github.com/HellFiveOsborn/tlm/suggest"
 )
 
 var repositoryOwner = "HellFiveOsborn"

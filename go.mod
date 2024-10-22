@@ -1,4 +1,4 @@
-module github.com/yusufcanb/tlm
+module github.com/HellFiveOsborn/tlm
 
 go 1.21
 

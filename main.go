@@ -2,11 +2,11 @@ package main
 
 import (
 	_ "embed"
-	"github.com/yusufcanb/tlm/shell"
+	"github.com/HellFiveOsborn/tlm/shell"
 	"log"
 	"os"
 
-	"github.com/yusufcanb/tlm/app"
+	"github.com/HellFiveOsborn/tlm/app"
 )
 
 //go:embed VERSION

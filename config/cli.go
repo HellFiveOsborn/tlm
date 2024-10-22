@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli/v2"
-	"github.com/yusufcanb/tlm/shell"
+	"github.com/HellFiveOsborn/tlm/shell"
 	"net/url"
 )
 

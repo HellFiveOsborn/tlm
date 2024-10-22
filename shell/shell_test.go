@@ -1,7 +1,7 @@
 package shell_test
 
 import (
-	"github.com/yusufcanb/tlm/shell"
+	"github.com/HellFiveOsborn/tlm/shell"
 	"testing"
 )
 

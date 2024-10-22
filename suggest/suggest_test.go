@@ -2,8 +2,8 @@ package suggest_test
 
 import (
 	ollama "github.com/jmorganca/ollama/api"
-	"github.com/yusufcanb/tlm/config"
-	"github.com/yusufcanb/tlm/suggest"
+	"github.com/HellFiveOsborn/tlm/config"
+	"github.com/HellFiveOsborn/tlm/suggest"
 	"testing"
 )
 

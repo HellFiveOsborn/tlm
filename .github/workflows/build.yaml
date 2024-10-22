@@ -17,7 +17,7 @@ jobs:
         run: go version
 
       - name: Install dependencies
-        run: go install github.com/yusufcanb/tlm
+        run: go install github.com/HellFiveOsborn/tlm
 
       - name: Build
         run: bash build.sh $(cat VERSION)

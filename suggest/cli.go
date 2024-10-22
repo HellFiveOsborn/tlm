@@ -7,8 +7,8 @@ import (
 	"github.com/charmbracelet/lipgloss"
 	"github.com/spf13/viper"
 	"github.com/urfave/cli/v2"
-	"github.com/yusufcanb/tlm/explain"
-	"github.com/yusufcanb/tlm/shell"
+	"github.com/HellFiveOsborn/tlm/explain"
+	"github.com/HellFiveOsborn/tlm/shell"
 	"os"
 	"time"
 )
