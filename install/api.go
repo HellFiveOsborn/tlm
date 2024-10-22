@@ -21,16 +21,21 @@ func (i *Install) installModelfile(name, modelfile string) error {
 func (i *Install) deployTlm() {
 	var err error
 
-	_ = spinner.New().Type(spinner.Line).Title(" Getting latest DolphinCoder").Action(func() {
+	modelName := viper.GetString("llm.model")
+    if modelName == "" {
+        modelName = "dolphincoder:7b" // fallback para o modelo padrão
+    }
+
+	_ = spinner.New().Type(spinner.Line).Title(fmt.Sprintf(" Getting latest %s", modelName)).Action(func() {
 		err = i.api.Pull(context.Background(), &ollama.PullRequest{Model: "dolphincoder:7b"}, func(res ollama.ProgressResponse) error {
 			return nil
 		})
 		if err != nil {
-			fmt.Println("- Installing DolphinCoder. " + shell.Err())
+			fmt.Println(fmt.Sprintf("- Installing %s. %s", modelName, shell.Err()))
 			os.Exit(-1)
 		}
 	}).Run()
-	fmt.Println("- Getting latest DolphinCoder. " + shell.Ok())
+	fmt.Println(fmt.Sprintf("- Getting latest %s. %s", modelName, shell.Ok()))
 
 	// 6. Install the modelfile (Suggest)
 	_ = spinner.New().Type(spinner.Line).Title(" Creating Modelfile for suggestions").Action(func() {

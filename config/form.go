@@ -3,21 +3,25 @@ package config
 import "github.com/charmbracelet/huh"
 
 type ConfigForm struct {
-	form *huh.Form
-
-	host    string
-	shell   string
-	explain string
-	suggest string
+    form    *huh.Form
+    host    string
+    model   string  
+    shell   string
+    explain string
+    suggest string
 }
 
 func (c *ConfigForm) Run() error {
 	c.form = huh.NewForm(
 		huh.NewGroup(
+            huh.NewInput().
+                Title("Ollama").
+                Value(&c.host),
 
-			huh.NewInput().
-				Title("Ollama").
-				Value(&c.host),
+            huh.NewInput().
+                Title("Model").
+                Description("Ollama model to use (e.g. dolphincoder:7b, codellama:7b, qwen2.5-coder:7b)").
+                Value(&c.model),
 
 			huh.NewSelect[string]().
 				Title("Shell").

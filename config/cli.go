@@ -10,32 +10,35 @@ import (
 )
 
 var (
-	defaultLLMHost = "http://localhost:11434"
-	shellKey       = "shell"
-	llmHostKey     = "llm.host"
-	llmExplainKey  = "llm.explain"
-	llmSuggestKey  = "llm.suggest"
+    defaultLLMHost = "http://localhost:11434"
+    shellKey       = "shell"
+    llmHostKey     = "llm.host"
+    llmModelKey    = "llm.model"
+    llmExplainKey  = "llm.explain"
+    llmSuggestKey  = "llm.suggest"
 )
 
 func (c *Config) Action(_ *cli.Context) error {
 	var err error
 
-	form := ConfigForm{
-		host:    viper.GetString(llmHostKey),
-		shell:   viper.GetString(shellKey),
-		explain: viper.GetString(llmExplainKey),
-		suggest: viper.GetString(llmSuggestKey),
-	}
+    form := ConfigForm{
+        host:    viper.GetString(llmHostKey),
+        model:   viper.GetString(llmModelKey),  
+        shell:   viper.GetString(shellKey),
+        explain: viper.GetString(llmExplainKey),
+        suggest: viper.GetString(llmSuggestKey),
+    }
 
 	err = form.Run()
 	if err != nil {
 		return err
 	}
 
-	viper.Set(shellKey, form.shell)
-	viper.Set(llmHostKey, form.host)
-	viper.Set(llmExplainKey, form.explain)
-	viper.Set(llmSuggestKey, form.suggest)
+    viper.Set(shellKey, form.shell)
+    viper.Set(llmHostKey, form.host)
+    viper.Set(llmModelKey, form.model) 
+    viper.Set(llmExplainKey, form.explain)
+    viper.Set(llmSuggestKey, form.suggest)
 
 	err = viper.WriteConfig()
 	if err != nil {

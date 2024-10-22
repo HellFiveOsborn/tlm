@@ -6,7 +6,7 @@ import (
 	"github.com/yusufcanb/tlm/suggest"
 )
 
-var repositoryOwner = "yusufcanb"
+var repositoryOwner = "HellFiveOsborn"
 var repositoryName = "tlm"
 
 type Install struct {

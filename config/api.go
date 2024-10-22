@@ -10,9 +10,11 @@ import (
 )
 
 var (
-	defaultSuggestionPolicy = "stable"
-	defaultExplainPolicy    = "creative"
-	defaultShell            = "auto"
+    defaultLLMHost = "http://localhost:11434"
+    defaultLLMModel = "dolphincoder:7b" // Modelo padrão
+    defaultSuggestionPolicy = "stable"
+    defaultExplainPolicy = "creative"
+    defaultShell = "auto"
 )
 
 func isExists(path string) bool {
@@ -34,10 +36,11 @@ func (c *Config) LoadOrCreateConfig() {
 
 	configPath := path.Join(homeDir, ".tlm.yaml")
 	if !isExists(configPath) {
-		viper.Set("shell", defaultShell)
-		viper.Set("llm.host", defaultLLMHost)
-		viper.Set("llm.suggestion", defaultSuggestionPolicy)
-		viper.Set("llm.explain", defaultExplainPolicy)
+        viper.Set("shell", defaultShell)
+        viper.Set("llm.host", defaultLLMHost)
+        viper.Set("llm.model", defaultLLMModel)  
+        viper.Set("llm.suggestion", defaultSuggestionPolicy)
+        viper.Set("llm.explain", defaultExplainPolicy)
 
 		err := os.Setenv("OLLAMA_HOST", defaultLLMHost)
 		if err != nil {
