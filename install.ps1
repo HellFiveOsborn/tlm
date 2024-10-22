@@ -16,7 +16,7 @@ if ($env:PROCESSOR_ARCHITECTURE -eq 'AMD64') {
 }
 
 # Download URL Construction
-$version = "1.1"
+$version = "1.2"
 $base_url = "https://github.com/hellfiveosborn/tlm/releases/download"
 $download_url = "${base_url}/${version}/tlm_${version}_${os}_${arch}.exe"
 
