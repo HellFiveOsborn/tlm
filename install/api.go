@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"github.com/charmbracelet/huh/spinner"
 	ollama "github.com/jmorganca/ollama/api"
+	"github.com/spf13/viper"
 	"github.com/HellFiveOsborn/tlm/shell"
 	"os"
 	"time"

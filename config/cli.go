@@ -10,7 +10,6 @@ import (
 )
 
 var (
-    defaultLLMHost = "http://localhost:11434"
     shellKey       = "shell"
     llmHostKey     = "llm.host"
     llmModelKey    = "llm.model"
